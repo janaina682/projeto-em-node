@@ -1,0 +1,13 @@
+{{#each postagens}}
+  <div class="card mt-4">
+    <div class="card-body">
+      <h4>{{titulo}}</h4>
+      <p>Descrição: {{descricao}}</p>
+      <small> Conteúdo: {{conteudo}}</small>
+      <small>Data: {{data}}</small><br />
+      <small>Categoria: {{categoria.nome}}</small><br />
+    </div>
+  </div>
+{{else}}
+  <p>Nenhuma postagem registrada!</p>
+{{/each}}
